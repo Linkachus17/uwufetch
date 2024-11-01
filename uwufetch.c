@@ -32,11 +32,12 @@
 #define SPRING_GREEN "\x1b[38;5;120m"
 #define YELLOW "\x1b[33m"
 #define BLUE "\x1b[34m"
+#define LBLUE "\x1b[38;2;91;206;250m"
 #define MAGENTA "\x1b[0;35m"
 #define CYAN "\x1b[36m"
 #define WHITE "\x1b[37m"
 #define PINK "\x1b[38;5;201m"
-#define LPINK "\x1b[38;5;213m"
+#define LPINK "\x1b[38;2;245;169;184m"
 
 #ifdef _WIN32
   #define BLOCK_CHAR "\xdb"     // block char for colors
@@ -644,6 +645,7 @@ int print_ascii(struct info* user_info) {
     replace(buffer, "{SPRING_GREEN}", SPRING_GREEN);
     replace(buffer, "{YELLOW}", YELLOW);
     replace(buffer, "{BLUE}", BLUE);
+    replace(buffer, "{LBLUE}", LBLUE);
     replace(buffer, "{MAGENTA}", MAGENTA);
     replace(buffer, "{CYAN}", CYAN);
     replace(buffer, "{WHITE}", WHITE);
